@@ -106,4 +106,6 @@
         (try! (fund-contract))
         (reveal-and-distribute)))
 
-(fund-and-reveal)
+(begin 
+    (try! (fund-and-reveal))
+    (ok true))
