@@ -1,0 +1,18 @@
+---
+id: 0
+name: Mainnet deployment
+network: mainnet
+stacks-node: "https://stacks-node-api.mainnet.stacks.co"
+bitcoin-node: "http://blockstack:blockstacksystem@bitcoin.blockstack.com:8332"
+plan:
+  batches:
+    - id: 0
+      transactions:
+        - contract-publish:
+            contract-name: fix-52
+            expected-sender: SP2SCWQE510T8JNQP9H3ZH2A4ZVKHGB1X6A8EX0EJ
+            cost: 1252668
+            path: contracts/fix-52.clar
+            anchor-block-only: true
+            clarity-version: 3
+      epoch: "3.1"
