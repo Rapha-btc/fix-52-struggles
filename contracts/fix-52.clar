@@ -1,4 +1,5 @@
 
+;; /Users/owner/bob-fix-52/contracts/fix-52.clar
 (define-constant err-unauthorized (err u401))
 (define-constant err-already-revealed (err u402))
 (define-constant err-transfer-failed (err u403))
@@ -106,6 +107,6 @@
         (try! (fund-contract))
         (reveal-and-distribute)))
 
-(begin 
-    (try! (fund-and-reveal))
-    (ok true))
+;; (begin 
+;;     (try! (fund-and-reveal))
+;;     (ok true))
