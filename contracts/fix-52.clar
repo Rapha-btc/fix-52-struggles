@@ -110,3 +110,4 @@
 ;; (begin 
 ;;     (try! (fund-and-reveal))
 ;;     (ok true))
+;; hiro's post conditions are incorrect in the platform deployment
